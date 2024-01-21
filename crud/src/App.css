@@ -1,0 +1,41 @@
+:root {
+  --font-size-sm: clamp(0.8rem, -0.01vw + 0.8rem, 0.79rem);
+  --font-size-base: clamp(1rem, 0.31vw + 0.94rem, 1.19rem);
+  --font-size-md: clamp(1.25rem, 0.89vw + 1.07rem, 1.78rem);
+  --font-size-lg: clamp(1.56rem, 1.85vw + 1.19rem, 2.67rem);
+  --font-size-xl: clamp(1.95rem, 3.42vw + 1.27rem, 4.01rem);
+  --font-size-xxl: clamp(2.44rem, 5.95vw + 1.25rem, 6.01rem);
+  --font-size-xxxl: clamp(3.05rem, 9.94vw + 1.06rem, 9.02rem);
+}
+.heading {
+  text-align: center;
+  background-color: cadetblue;
+  padding: max(2vh, 2vh);
+  font-size: var(--font-size-xl);
+  max-width: 100vw;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.box {
+  background-color: white;
+  padding: max(12vh, 5vw);
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+ .modal-title{
+  font-size: var(--font-size-md);
+}
+
+@media only screen and (max-width: 29.6875rem) {
+  .heading {
+    /* width: 171vw; */
+    padding: max(2vh, 2vh);
+  }
+}
